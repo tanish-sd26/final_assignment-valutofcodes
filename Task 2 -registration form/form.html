@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="form.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <title>Registration Form</title>
+    </head>
+    <body>
+     <form name="f1" method="post" action="upload.php" enctype="multipart/form-data">
+        <div class="container">
+            <div class="box">
+                <div class="details">
+                    <h2>REGISTRATION FORM</h2>
+                    <div class="box-wrapper">
+                        <label for="name">Name</label><br>
+                        <input type="text" placeholder="First Name">
+                        <input type="text" placeholder="Last Name">
+                        
+                    </div>
+                    <div class="box-wrapper">
+                        <label for="email address">Email Address</label><br>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="box-wrapper">
+                        <label for="password">Password</label><br>
+                        <input type="password" id="password1" onkeyup="checkPasswordStrength()" placeholder="Enter password">
+                        <i class="fa fa-eye" id="togglePwd" onclick="togglePassword()" style="position: absolute; top: 35px; right: 45%; cursor: pointer;"></i>
+                        <br>
+                        <span id="strength-msg"></span>
+                    </div>
+                    <div class="box-wrapper">
+                        <label for="confirm password">Confirm password</label><br>
+                        <input type="password" id="password2" onkeyup="checkPasswordMatch()" placeholder="Confirm password">
+                        <i class="fa fa-eye" id="togglePwd" onclick="toggleConfirmPassword()" style="position: absolute; top: 35px; right: 45%; cursor: pointer;"></i>
+                        <br>
+                        <span id="match-msg"></span>
+                    </div>
+                    <div class="box-wrapper">
+                      <label for="birthdate">Date of Birth </label><br>
+                      <input type="date" name="birhtday">
+                    </div>
+                    <div class="g1 box-wrapper">
+                        <label for="gender">Select Your Gender:</label><br>
+                         <input type="radio" name="gender" value="Male">Male
+                         <input type="radio" name="gender" value="Female">Female
+                    </div>
+                    <div class="box-wrapper">
+                        <label for="profilePic">Upload Profile Picture:</label><br>
+                        <input type="file" id="profilePic" name="profilePic" accept="image/*">
+                    </div>
+                    <div class="g1 box-wrapper">
+                        <input type="checkbox" name="c1" value="terms&conditions">I Agree to terms and conditions<br>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Register">
+                    </div>
+            </div>
+        </div>
+     </form>
+    <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+      background-color:  rgb(28, 28, 28);
+      font-family: 'Segoe UI', sans-serif;
+      padding: 0px;
+      color: rgb(254, 255, 255);
+      scroll-behavior: smooth;
+    }
+   .my-card1{
+     align-items: center;
+      max-width: 200px;
+      max-height: fit-content;
+      border-radius: 15px;
+   }
+   .container1-fluid{
+     background-color: #323946;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     scroll-margin-top: 100px;
+     color: white;
+   } 
+    .container-fluid{
+     background-color:#1f242d;
+     min-height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     scroll-margin-top: 100px;
+     color: white;
+    }
+   h2 {
+     border-bottom: 2px solid #36d1f8;
+   }
+   nav{
+     text-align:right;
+     margin-bottom: -28px;
+   }
+   nav a {
+     color: #fff; 
+     text-decoration: none;
+     margin-left: 5px;
+     font-size: 16px;
+   } 
+   nav a:hover {
+    color: rgb(97, 232, 241);
+   } 
+   .custom-icon-img {
+     width: 100px;
+     height: 100px;
+     object-fit: contain;
+     background-color: #111;
+     padding: 10px;
+     border-radius: 12px;
+     box-shadow: 0 0 10px rgb(251, 200, 207);
+    }
+.interest-box {
+  padding: 15px;
+  border: 2px solid #3ec7f3;
+  border-radius: 10px;
+  color: #9beef8;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 10px #36d1f8;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.interest-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #66f9ff;
+}
+
+.pro {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  align-items: center;
+}
+.pro-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(79, 236, 244, 0.456);
+  transition: transform 0.5s ease;
+}
+.pro-card img {
+  width: 400px ;
+  height: 500px fit-content;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+.pro-card:hover img{
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+.pro-info {
+  position: absolute;
+  bottom: -120%;
+  left: 0;
+  right: 0;
+  background-color: rgba(27, 26, 26, 0.75);
+  color: rgb(33, 234, 214);
+  padding: 20px;
+  transition: bottom 0.6s ease;
+  text-align: center;
+}
+.pro-card:hover .pro-info {
+  bottom: 0;
+}
+.grid-img img {
+   gap: 20px;
+   width: 50px;
+   height: auto;
+   cursor: pointer;
+}
